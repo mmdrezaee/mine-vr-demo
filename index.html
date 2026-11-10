@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mine VR Demos</title>
+<meta name="description" content="WebXR prototypes for hazard recognition training in open-pit mining, by Mohammad Rezaeiashtiani.">
+<style>
+  :root { --bg: #11161b; --card: #1a2027; --text: #f2f4f5; --quiet: #aab4bc; --accent: #ffb31a; --line: rgba(255,255,255,0.12); }
+  @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg: #f4f1ea; --card: #ffffff; --text: #1d2125; --quiet: #5b636a; --line: rgba(0,0,0,0.1); } }
+  :root[data-theme="light"] { --bg: #f4f1ea; --card: #ffffff; --text: #1d2125; --quiet: #5b636a; --line: rgba(0,0,0,0.1); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
+  .eyebrow { color: var(--accent); font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
+  h1 { font-size: clamp(26px, 5vw, 36px); margin: 8px 0 10px; line-height: 1.15; }
+  p { color: var(--quiet); line-height: 1.55; }
+  .grid { display: grid; gap: 14px; margin-top: 26px; }
+  a.card { display: block; text-decoration: none; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; color: #1b1405; background: var(--accent); border-radius: 999px; padding: 3px 10px; }
+  h2 { margin: 10px 0 6px; font-size: 20px; }
+  .card p { margin: 0; font-size: 15px; }
+  footer { margin-top: 30px; font-size: 13px; color: var(--quiet); }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">WebXR prototypes · Meta Quest 3 and desktop</div>
+  <h1>Hazard recognition training for open-pit mining</h1>
+  <p>Open a demo in the Meta Quest Browser and tap <strong>Enter VR</strong>, or play it on a laptop with the mouse. Nothing to install.</p>
+  <div class="grid">
+    <a class="card" href="v2/">
+      <span class="tag">V2</span>
+      <h2>From documents to immersive training</h2>
+      <p>A live shift at the pit lookout: moving haul trucks, an excavator loading, light vehicles. The rules of a written procedure become live situations, with points, streaks, badges and a learner profile that adapts the next shift.</p>
+    </a>
+    <a class="card" href="v1/">
+      <span class="tag">V1</span>
+      <h2>Open-pit bench inspection</h2>
+      <p>A static bench beside a haul road with five hazards to find. Records time to find each hazard, false alarms and when each hazard was first looked at.</p>
+    </a>
+  </div>
+  <footer>Prototype by Mohammad Rezaeiashtiani. The sample procedure in V2 is fictional and written for demonstration only.</footer>
+</main>
+</body>
+</html>
