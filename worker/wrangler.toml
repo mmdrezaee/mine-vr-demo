@@ -1,0 +1,9 @@
+name = "sam-proxy"
+main = "sam-proxy.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+# Pages allowed to call this proxy (comma-separated)
+ALLOWED_ORIGINS = "https://mmdrezaee.github.io"
+# Claude model. Sonnet as requested; claude-haiku-5-5 answers faster and costs less.
+MODEL = "claude-sonnet-5-5"

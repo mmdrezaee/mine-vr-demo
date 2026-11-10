@@ -2,6 +2,7 @@
 
 WebXR prototypes for hazard recognition training in open-pit mining. They run in the Meta Quest 3 browser (tap **Enter VR**) and on desktop.
 
+- **V3: Live shift with Sam** (`/v3/`): V2 plus positional machinery sound and Sam, a virtual trainer who narrates, reacts and answers questions. Answers come from Claude through an optional proxy (`worker/`), or offline from the procedure.
 - **V2: From documents to immersive training** (`/v2/`): a live, gamified shift. Rules from a sample procedure become moving situations (haul trucks, excavator, light vehicles), with points, streaks, badges and a learner profile that adapts the next shift.
 - **V1: Open-pit bench inspection** (`/v1/`): find five static hazards; logs time to find, false alarms and first-look times.
 
